@@ -10,7 +10,7 @@ const Header = ()=>{
     }
 
     return(
-        <header className="flex flex-row p-4">
+        <header className="flex flex-row p-4 fixed w-full backdrop-blur-sm">
             <div className="w-1/2">
             <Image
             width={200}
