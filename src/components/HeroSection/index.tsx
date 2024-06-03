@@ -9,7 +9,7 @@ const HeroSection = () => {
         loop
         muted
       />
-      <div className="absolute w-full h-full top-0 flex flex-col justify-center text-white p-40">
+      <div className="absolute w-full h-full top-0 flex flex-col justify-center text-white p-40 mt-20">
         <div className="mb-8 w-32 bg-[#93D6E2] h-6"></div>
         <div className="text-8xl font-bold leading-snug	">
           <p>PROTEJA OS</p>
