@@ -1,8 +1,20 @@
 'use client'
 import Image from "next/image"
 import { useRouter } from "next/navigation"
+import { useState } from "react"
 
 const Header = ()=>{
+    const [color, setColor] = useState(false)
+    const changeColor = ()=>{
+        if(window.scrollY >=800) {
+            setColor(true)
+        }else {
+            setColor(false)
+        }
+    }
+
+    window.addEventListener("scroll", changeColor)
+
     const router = useRouter();
 
     const handleNavigate = (route:string) => {
@@ -10,7 +22,7 @@ const Header = ()=>{
     }
 
     return(
-        <header className="flex flex-row p-4 fixed w-full backdrop-blur-sm z-10">
+        <header className={color ? 'flex flex-row p-4 fixed w-full backdrop-blur-sm z-10 bg-[#1D4B7F] ease-in duration-300	': 'flex flex-row p-4 fixed w-full backdrop-blur-sm z-10 ease-in duration-300	'}>
             <div className="w-1/2">
             <Image
             width={200}
