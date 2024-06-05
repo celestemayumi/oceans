@@ -33,7 +33,7 @@ const CardsData = [
 
 const HelpCard = () => {
   return (
-    <div className="bg-[#1D4B7F] w-full h-full px-32 py-10">
+    <div className="bg-[#013E78] w-full h-full px-32 py-10">
       <h1 className="mb-10 text-center text-white font-bold text-4xl">
         VEJA COMO VOCE PODE AJUDAR OS NOSSOS OCEANOS
       </h1>
@@ -58,7 +58,7 @@ const HelpCard = () => {
                 <div className="absolute left-0 top-[-100%] opacity-0 group-hover:opacity-100 group-hover:top-[0] p-4 w-full h-full  bg-black/30 group-hover:backdrop-blur-sm duration-500 flex flex-col items-center justify-center ">
                     <h1 className="text-3xl font-bold text-center mb-5">{title}</h1>
                     <p className="font-medium text-justify">{desc}</p>
-                    <button className="my-5 px-5 py-2 bg-[#f3f3f3] rounded-md text-[#1D4B7F] font-bold text-xl">SAIBA MAIS </button>
+                    <button className="my-5 px-5 py-2 bg-[#f3f3f3] rounded-md text-[#013E78] font-bold text-xl">SAIBA MAIS </button>
                 </div>
               </div>
             );

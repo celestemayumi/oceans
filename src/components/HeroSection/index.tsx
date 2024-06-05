@@ -23,7 +23,7 @@ const HeroSection = (props:HeroSecProps) => {
         <p className="w-1/2 text-lg mt-10">
         {props.desc}
         </p>
-        <button className="bg-[#f3f3f3] text-[#1D4B7F] w-1/5 font-bold rounded-md py-2 px-6 mt-16 text-2xl">{props.button}</button>
+        <button className="bg-[#f3f3f3] text-[#013E78] w-1/5 font-bold rounded-md py-2 px-6 mt-16 text-2xl">{props.button}</button>
       </div>
     </section>
   );

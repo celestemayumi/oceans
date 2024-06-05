@@ -24,7 +24,7 @@ const Header = ()=>{
     }
 
     return(
-        <header className={color ? 'flex flex-row p-4 fixed w-full backdrop-blur-sm z-10 bg-[#1D4B7F] ease-in duration-300	': 'flex flex-row p-4 fixed w-full backdrop-blur-sm z-10 ease-in duration-300	'}>
+        <header className={color ? 'flex flex-row p-4 fixed w-full z-10 bg-[#013E78] ease-in duration-300	': 'flex flex-row p-4 fixed w-full backdrop-blur-sm z-10 ease-in duration-300	'}>
             <div className="w-1/2">
             <Image
             width={200}
@@ -38,7 +38,7 @@ const Header = ()=>{
                     <li onClick={() => handleNavigate("/projeto")} >O PROJETO</li>
                     <li onClick={() => handleNavigate("/parceiro")}>FACA PARTE</li>
                     <li onClick={() => handleNavigate("/eventos")}>EVENTOS</li>
-                    <button className="bg-[#F3F3F3] text-[#1D4B7F] px-6 py-2 rounded-md">REPORTAR</button>
+                    <button className="bg-[#F3F3F3] text-[#013E78] px-6 py-2 rounded-md">REPORTAR</button>
                 </ul>
             </nav>
         </header>   
