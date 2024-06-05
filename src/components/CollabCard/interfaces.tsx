@@ -3,6 +3,7 @@ interface CollabCardProps {
     desc: string;
     source: string;
     char: string;
+    click?: any;
 }
 
 export default CollabCardProps;
