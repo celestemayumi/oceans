@@ -12,7 +12,7 @@ const ProjectTwo = () => {
       </p>
       <div className="w-1/2 flex flex-col items-center m-8">
         <h1 className="text-white text-5xl font-bold">VENHA FAZER PARTE!</h1>
-        <button className="bg-[#F3F3F3] text-2xl text-[#1D4B7F] py-3 px-6 rounded-md font-bold my-6">
+        <button className="bg-[#F3F3F3] text-2xl text-[#013E78] py-3 px-6 rounded-md font-bold my-6">
           SAIBA MAIS
         </button>
       </div>
