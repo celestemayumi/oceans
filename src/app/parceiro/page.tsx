@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection"
+import CollabCard from "@/components/CollabCard"
 
 export default function Parceiro(){
     return(
@@ -11,6 +12,21 @@ export default function Parceiro(){
         desc="Proteger nossos oceanos é essencial para o futuro do nosso planeta. Da preservação da biodiversidade marinha à promoção de práticas pesqueiras sustentáveis e à mitigação da poluição oceânica, cada ação conta. Ao projetar nossos oceanos, estamos moldando um mundo mais saudável e equilibrado para as gerações futuras."
         button="SAIBA MAIS"
         />
+        <h1 className="mt-10 text-[#1D4B7F] text-center text-4xl font-bold">Veja como fazer parte</h1>
+        <div className="px-32 py-10 flex w-full justify-evenly">
+        <CollabCard
+        title="VOLUNTÁRIO"
+        desc="Participe dos nossos eventos!"
+        source="/ipanema.png"
+        char="/LIA.png"
+        />
+        <CollabCard
+        title="PARCEIRO"
+        desc="Receba o selo VitaliSea!"
+        source="/oceano.png"
+        char="/edificio.png"
+        />
+        </div>
         </>
     )
 }

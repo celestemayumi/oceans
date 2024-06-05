@@ -12,8 +12,10 @@ const Header = ()=>{
             setColor(false)
         }
     }
-
-    window.addEventListener("scroll", changeColor)
+    
+    if (typeof window !== "undefined") {
+        window.addEventListener("scroll", changeColor);
+    }
 
     const router = useRouter();
 
