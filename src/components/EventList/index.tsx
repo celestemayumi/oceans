@@ -10,9 +10,7 @@ const EventList = () => {
   const [idEvent, setIdEvent] = useState("");
   const [resposta, setResposta] = useState("");
   const [erro, setErro] = useState("");
-  const [values, setValues] = useState({
-    email: "",
-  });
+  const [email, setemail] = useState("");
 
   const getEvents = async () => {
     try {
@@ -33,14 +31,17 @@ const EventList = () => {
   const submitForm = async () => {
     setErro("");
     setResposta("");
-    console.log(values);
-    const response = await fetch("http://localhost:8080/event/email", {
-      method: "post",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(values),
-    })
+    console.log(email);
+    const response = await fetch(
+      "http://localhost:8080/eventsvolunteers/" + idEvent,
+      {
+        method: "post",
+        headers: {
+          "Content-Type": "text/plain",
+        },
+        body: email,
+      }
+    )
       .then((response) => {
         if (!response.ok) {
           return response.text().then((message) => {
@@ -64,6 +65,9 @@ const EventList = () => {
     setErro("");
     setPopup("");
     setClassPopupView("");
+    setIdEvent("");
+    setErro("");
+    setResposta("");
   };
   const setPopupView = (id: string) => {
     setPopupClass();
@@ -72,13 +76,7 @@ const EventList = () => {
   };
   const handleChange = (event: any) => {
     const fieldValue = event.target.value;
-    const fieldName = event.target.name;
-    setValues((currentValues) => {
-      return {
-        ...currentValues,
-        [fieldName]: fieldValue,
-      };
-    });
+    setemail(fieldValue);
   };
   return (
     <div>
@@ -111,7 +109,7 @@ const EventList = () => {
           </div>
           <div className="popup-content">
             <div>
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Insira seu email cadastrado</label>
               <input
                 name="email"
                 type="email"
