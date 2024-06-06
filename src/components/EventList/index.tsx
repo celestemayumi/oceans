@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { parseISO, format } from 'date-fns';
 import EventCard from "../EventCard";
 import "./styles.css";
 
@@ -78,6 +79,11 @@ const EventList = () => {
     const fieldValue = event.target.value;
     setemail(fieldValue);
   };
+  const formatDate = (dateString: string) => {
+    const cleanedDateString = dateString.replace('[UTC]', '');
+    const date = parseISO(cleanedDateString);
+    return format(date, 'dd/MM/yyyy HH:mm a');
+  };
   return (
     <div>
       {events.map((event: any) => {
@@ -90,14 +96,14 @@ const EventList = () => {
         if (event.cep) {
           local = `${local} - CEP: ${event.cep}`;
         }
-        const data = event.data.toString("dd/mm/yyyy");
+        const formattedDate = formatDate(event.data);
         return (
           <EventCard
             key={event.id}
             title={event.titulo}
             desc={event.descricao}
             local={local}
-            data={data}
+            data={formattedDate}
             click={() => setPopupView(event.id)}
           />
         );
