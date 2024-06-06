@@ -115,7 +115,7 @@ const EventList = () => {
           </div>
           <div className="popup-content">
             <div>
-              <label htmlFor="email">Insira seu email cadastrado</label>
+              <label htmlFor="email">Insira seu email cadastrado:</label>
               <input
                 name="email"
                 type="email"

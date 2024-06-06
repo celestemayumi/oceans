@@ -17,8 +17,9 @@
     display: none;
 }
 .popup{
-    width: 100%;
+    width: 80%;
     max-width: 300px;
+    margin-top: 15em;
     margin: 18% auto;
     padding: 25px;
     background: white;
@@ -46,18 +47,20 @@
     border-radius: 5%;
     padding: 0.6em 2.3em;
     color: white;
-    background-color:  rgb(103, 161, 232);
+    background-color:  rgb(45, 134, 242);
 }
 .popup-content button:hover{
-    background-color:  rgb(93, 145, 208);
+    background-color:  rgb(71, 139, 223);
 }
-.popup-content label{
-    margin: 5px;
+.popup-content div label{
+    margin-bottom: 4%;
 }
 .popup-content input{
     outline: none;
     border-radius: 10px;
     padding: 6px 25px;
+    margin-top: 4%;
+    border: 2px solid rgb(73, 123, 232);
 }
 .popup-content .div-button{
     display: flex;
@@ -65,9 +68,11 @@
 }
 .error{
     color: red;
+    text-align: center;
 }
 .success{
     color: green;
+    text-align: center;
 }
 @media (min-width: 0px) and (max-width: 1107px){
     .options{width: 100%;}
