@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection"
 import CollabCard from "@/components/CollabCard"
 import HelpUs from "@/components/HelpUs"
+import Awareness from "@/components/Awareness"
 
 export default function Parceiro(){
     return(
@@ -29,6 +30,7 @@ export default function Parceiro(){
         />
         </div>
         <HelpUs/>
+        <Awareness></Awareness>
         </>
     )
 }
