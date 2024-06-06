@@ -1,8 +1,6 @@
 import HeroSection from "@/components/HeroSection"
-import CollabCard from "@/components/CollabCard"
 import HelpUs from "@/components/HelpUs"
-import VolunteerForm from "@/components/VolunteerForm"
-import PartnerForm from "@/components/PartnerForm"
+import VolunteerForm from "@/components/CollabForm"
 
 export default function Parceiro(){
     return(
@@ -16,10 +14,7 @@ export default function Parceiro(){
         button="SAIBA MAIS"
         />
         <h1 className="mt-10 text-[#013E78] text-center text-4xl font-bold">Veja como fazer parte</h1>
-        <div className="px-32 py-10 flex w-full justify-evenly">
         <VolunteerForm/>
-        <PartnerForm/>
-        </div>
         <HelpUs/>
         </>
     )
