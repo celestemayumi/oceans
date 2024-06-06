@@ -1,0 +1,181 @@
+
+.popup-close button{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+.popup-wrapper{
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.none{
+    display: none;
+}
+.popup{
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    margin-top: 10em;
+    padding: 25px;
+    background: white;
+    position: relative;
+    border-radius: 2%;
+}
+.popup-close{
+    font-family: 'arial';
+    color: rgb(242, 52, 52);
+    font-size: 20px;
+}
+.popup-content button{
+    margin: 1em;
+    border: 1px solid silver;
+    border-radius: 5%;
+    padding: 0.6em 2.3em;
+    color: white;
+    background-color:   rgb(45, 134, 242);
+}
+.popup-content button:hover{
+    background-color:   rgb(71, 139, 223);
+}
+.popup-content label{
+    margin: 5px;
+}
+.popup-content input{
+    outline: none;
+    border-radius: 10px;
+    padding: 6px 25px;
+}
+.popup-content div{
+    margin-bottom: 5%;
+}
+.popup-content .div-button{
+    display: flex;
+    justify-content: center;
+}
+#input-date{
+    text-decoration: none;
+    padding-inline: 50px;
+}
+.popup-alert{
+    width: 80%;
+    max-width: 1200px;
+    margin: 10% auto;
+    margin-top: 10em;
+    padding: 20px;
+    background: white;
+    position: relative;
+    border-radius: 2%;
+}
+.popup-content-alert{
+    max-height: 500px;
+}
+.popup-content-alert .form-alert{
+    display: flex;
+    flex-direction: row;
+}
+.popup-content-alert h1{
+    font-size: 120%;
+    margin-bottom: 2%;
+}
+.form-alert div{
+    width: 50%;
+}
+.alert-location-info{
+    flex-wrap: wrap;
+    max-height: 500px;
+}
+
+#popup-delete{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#popup-delete p{
+    padding: 0.6em;
+}
+.popup-close{
+    font-family: 'arial';
+    color: rgb(242, 52, 52);
+    font-size: 20px;
+}
+.popup-content-alert button{
+    border: 1px solid silver;
+    border-radius: 5%;
+    padding: 1.5%;
+    padding-inline: 4%;
+    color: white;
+    background-color:  rgb(45, 134, 242);
+}
+.popup-content-alert button:hover{
+  
+    background-color:  rgb(71, 139, 223);
+}
+.alert-info div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.popup-content-alert .alert-location-info .location-form{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.popup-content-alert .alert-location-info .location-form div{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.popup-content-alert label{
+    margin: 5px;
+}
+.popup-content-alert input{
+    outline: none;
+    border-radius: 10px;
+    padding: 6px 25px;
+}
+#alert-form-email{
+    width: 60%;
+}
+.popup-content-alert div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.popup-content-alert div{
+    margin: 1%;
+}
+.popup-content-alert div textarea{
+    width: 60%;
+    padding: 2%;
+}
+.popup-content-alert  h1{
+    text-align: center;
+}
+.popup-content-alert .div-button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+input, textarea{
+    border: 1px solid rgb(73, 123, 232);
+}
+.error{
+    color: red;
+    text-align: center;
+}
+.success{
+    color: green;
+    text-align: center;
+}
+@media (min-width: 0px) and (max-width: 1107px){
+    .options{width: 100%;}
+}
