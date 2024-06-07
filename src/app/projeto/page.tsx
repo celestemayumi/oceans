@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection"
 import OurMission from "@/components/OurMission"
+import ProjectsComponent from "@/components/ProjectsComponent"
 
 export default function Projeto(){
     return(
@@ -13,6 +14,7 @@ export default function Projeto(){
         button="SAIBA MAIS"
         />
         <OurMission/>
+        <ProjectsComponent/>
         </>
     )
 }
