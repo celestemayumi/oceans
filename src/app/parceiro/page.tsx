@@ -16,23 +16,8 @@ export default function Parceiro() {
         button="SAIBA MAIS"
         />
         <h1 className="mt-10 text-[#013E78] text-center text-4xl font-bold">Veja como fazer parte</h1>
-        <div className="px-32 py-10 flex w-full justify-evenly">
-        <CollabCard
-        title="VOLUNTÁRIO"
-        desc="Participe dos nossos eventos!"
-        source="/ipanema.png"
-        char="/LIA.png"
-        />
-        <CollabCard
-        title="PARCEIRO"
-        desc="Receba o selo VitaliSea!"
-        source="/oceano.png"
-        char="/edificio.png"
-        />
-        </div>
-        <HelpUs/>
-        <Awareness></Awareness>
         <CollabForm />
+        <Awareness></Awareness>
         </>
     )
 }
