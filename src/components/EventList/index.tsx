@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { parseISO, format } from 'date-fns';
 import EventCard from "../EventCard";
+import EventProps from "./interface";
 import "./styles.css";
 
 const EventList = () => {
@@ -86,7 +87,7 @@ const EventList = () => {
   };
   return (
     <div>
-      {events.map((event: any) => {
+      {events.map((event: EventProps) => {
         let local = `${event.cidade}, ${event.estado}`;
 
         if (event.logradouro) {
