@@ -80,3 +80,8 @@ Execute o servidor de desenvolvimento:
 ````bash
 npm run dev
 ````
+
+## ✨ Apresentação do funcionamento do programa
+ 
+- ### [Youtube](https://youtu.be/g3jsxzch71Q)
+- ### [Vercel](https://oceans-eight.vercel.app/)
