@@ -9,20 +9,21 @@ const Footer = () => {
       </div>
       <div className="text-white">
         <h1 className="text-xl">Nosso time:</h1>
+        <p>1TDSPC</p>
         <ul>
           <li className="my-2">
             <Link href="https://www.linkedin.com/in/celestetanaka/">
-              Celeste Tanaka - Front-End Dev & Data Scientist
+              Celeste Tanaka - Front-End Dev & Data Scientist, RM552865
             </Link>
           </li>
           <li className="my-2">
             <Link href="https://www.linkedin.com/in/liviamarianalopes/">
-              Livia Mariana - Back-End Developer
+              Livia Mariana - Back-End Developer, RM552558
             </Link>
           </li>
           <li className="my-2">
             <Link href="https://www.linkedin.com/in/luanavieirass/">
-              Luana Vieira - DBA Dev & Research Analyst
+              Luana Vieira - DBA Dev & Research Analyst RM552994
             </Link>
           </li>
         </ul>
